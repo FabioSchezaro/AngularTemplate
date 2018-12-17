@@ -1,0 +1,57 @@
+<div class="wrapper">
+
+    <app-headbar></app-headbar>
+  
+    <div id="content">
+  
+        <app-navbar-expand></app-navbar-expand>
+        
+        <div class="card">
+
+          <div class="card-header">
+              <h3>Tabela  </h3> 
+              <code>
+                  (angular-datatables) - https://l-lin.github.io/angular-datatables/#/basic/zero-config 
+              </code>
+          </div>
+         
+          <div class="card-body">
+
+
+              <div class="row">
+                
+                <div class="col-12">
+                    <h3>
+                        <span class="alert-info">Tabela Padrão</span>
+                    </h3> <hr/>
+
+                    <table datatable [dtOptions]="dtOptions" class="row-border hover table-bordered"  *ngIf='cursos && cursos.length'>
+                        <thead>
+                          <tr>
+                            <th>Código do Curso</th>
+                            <th>Código ERP</th>
+                            <th>Nome</th>
+                            <th>Link Externo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor='let item of cursos'>
+                            <td>{{ item.codigoCurso}}</td>
+                            <td>{{ item.codigoErp }}</td>
+                            <td>{{ item.nome }}</td>
+                            <td>{{ item.linkExterno }}</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+              </div>
+             
+          </div>
+
+        </div>
+    </div>
+  
+  </div>
+  

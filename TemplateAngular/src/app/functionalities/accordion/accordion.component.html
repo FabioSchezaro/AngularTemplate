@@ -1,0 +1,94 @@
+<div class="wrapper">
+
+  <app-headbar></app-headbar>
+
+  <div id="content">
+
+      <app-navbar-expand></app-navbar-expand>
+      
+      <div class="card">
+
+        <div class="card-header">
+            <h3>Accordion</h3>
+            <code>https://ng-bootstrap.github.io/#/components/accordion/examples</code>
+        </div>
+       
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-lg-12">
+
+                <ngb-accordion #acc="ngbAccordion">
+                    <ngb-panel title="One" id="config-panel-one">
+                      <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                      </ng-template>
+                    </ngb-panel>
+                    <ngb-panel title="Two">
+                      <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                      </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+
+            </div>
+          </div>
+
+
+
+          <div class="row">
+
+            <div class="col-lg-12">
+                <label class="col-sm-12 col-form-label sub-title">Drop Down Abertura com Botão</label>
+                <ngb-accordion #acc="ngbAccordion">
+                    <ngb-panel id="toggle-1" title="Painel 1">
+                      <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                      </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="toggle-2" title="Painel 2">
+                      <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                      </ng-template>
+                    </ngb-panel>
+                  </ngb-accordion>
+                  
+                  <hr/>
+                  
+                  <button class="btn btn-sm btn-outline-primary mr-2" (click)="acc.toggle('toggle-1')">Painel 1</button>
+                  <button class="btn btn-sm btn-outline-primary mr-2" (click)="acc.toggle('toggle-2')">Painel 2</button>
+
+            </div>
+          </div>
+
+            
+
+        </div>
+      
+        
+      </div>
+    
+
+  </div>
+
+</div>

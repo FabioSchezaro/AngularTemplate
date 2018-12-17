@@ -1,0 +1,53 @@
+<div class="wrapper">
+
+    <app-headbar></app-headbar>
+  
+    <div id="content">
+  
+        <app-navbar-expand></app-navbar-expand>
+        
+        <div class="card">
+  
+          <div class="card-header">
+              <h3>Máscara</h3>
+              <code>https://github.com/text-mask/text-mask</code><br/>
+              <code>https://text-mask.github.io/text-mask/</code>
+          </div>
+         
+          <div class="card-body">
+
+
+              <div class="row">
+
+                  <div class="col-sm-12 col-xl-2">
+                      <label class="col-sm-12 col-xl-12 col-form-label sub-title">CPF</label>
+                      <input class="form-control" [textMask]="{mask: maskcpf}"  type="text" />
+                  </div>
+                  <div class="col-sm-12 col-xl-2">
+                      <label class="col-sm-12 col-xl-12 col-form-label sub-title">Telefone</label>
+                      <input class="form-control" [textMask]="{mask: maskfone}"  type="text" />
+                  </div>
+                  <div class="col-sm-12 col-xl-2">
+                      <label class="col-sm-12 col-xl-12 col-form-label sub-title">R$</label>
+                      <input class="form-control" [textMask]="{mask: numberMask}" type="text" />
+                  </div>
+                  <div class="col-sm-12 col-xl-2">
+                        <label class="col-sm-12 col-form-label sub-title">Email</label>
+                        <input class="form-control" [textMask]="{mask: maskEmail}" type="text" />
+                    </div>
+               
+                  
+              </div>
+              <br/>
+
+  
+          </div>
+        
+          
+        </div>
+      
+  
+    </div>
+  
+  </div>
+  

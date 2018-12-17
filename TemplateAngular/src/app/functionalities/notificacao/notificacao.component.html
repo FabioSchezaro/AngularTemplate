@@ -1,0 +1,43 @@
+
+
+<div class="wrapper">
+
+  <app-headbar></app-headbar>
+
+  <div id="content">
+
+      <app-navbar-expand></app-navbar-expand>
+      
+      <div class="card">
+
+        <div class="card-header">
+          <h3>Notificações</h3><code>(angular-notifier) - https://stackblitz.com/edit/angular-notifier-demo?file=src%2Fapp%2Fapp.component.ts</code>
+        </div>
+       
+        <div class="card-body">
+
+          <div class="row">
+
+            <div class="col-12">
+
+              <div class="btn-group">
+                  <button class="btn-lg btn-success" (click)="sucesso()">SUCESSO</button>
+                  <button class="btn-lg btn-info" (click)="informacao()">INFORMAÇÃO</button>
+                  <button class="btn-lg btn-warning" (click)="alerta()">ALERTA</button>
+                  <button class="btn-lg btn-danger"(click)="erro()">ERRO</button>
+                  <button class="btn-lg btn-primary" (click)="fechaAlerta()">FECHA ALERTA</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      
+      </div>
+    
+    </div>
+   
+
+</div>
+
+<notifier-container></notifier-container>

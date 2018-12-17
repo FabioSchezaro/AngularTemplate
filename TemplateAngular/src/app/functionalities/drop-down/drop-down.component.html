@@ -1,0 +1,58 @@
+
+
+<div class="wrapper">
+
+  <app-headbar></app-headbar>
+
+  <div id="content">
+
+      <app-navbar-expand></app-navbar-expand>
+      
+      <div class="card">
+
+        <div class="card-header">
+          <h3>Dropdown</h3><code>(ng-select2) - https://www.npmjs.com/package/ng-select2</code>
+        </div>
+       
+        <div class="card-body">
+
+          <div class="row">
+
+              <div class="col-sm-12 col-xl-4">
+                  <label class="col-sm-12 col-form-label sub-title">Singular</label>
+                  <ng-select2 [data]="exampleData"
+                  [width]="300">
+                </ng-select2>
+
+          
+            
+        
+                  
+              </div>
+          </div>
+          <br/>
+          <div class="row">
+
+              <div class="col-sm-12 col-xl-12">
+                  <label class="col-sm-12 col-form-label sub-title">Multiplo</label>
+                  <ng-select2 [data]="exampleData"
+                      [options]="options"
+                      [width]="1000">
+                  </ng-select2>
+  
+            
+        
+                  
+              </div>
+
+          </div>
+
+        </div>
+      
+      </div>
+    
+    </div>
+   
+
+</div>
+
